@@ -26,27 +26,36 @@ This is a user management project built with a monorepo structure, powered by Tu
    git clone https://github.com/fuad-miftah/usermanagment-react-nestjs.git
 
 2. Navigate to the project's root directory:
-  cd nest-react
+   
+   ```bash
+   cd nest-react
 
-3. Install the project dependencies:
+4. Install the project dependencies:
 
-npm install
+    ```bash
+   npm install
 
 4. Set up the database connection:
 
-create a .env file
+   create a .env file
 
-Update the database connection URL in the Prisma .env file (e.g., DATABASE_URL=postgresql://username:password@localhost/defaultdb).
+   Update the database connection URL in the Prisma .env file (e.g., DATABASE_URL=postgresql://username:password@localhost/defaultdb).
 
 5. Apply database migrations:
 
-cd apps/api 
-npx prisma migrate dev --name init
+    ```bash
+    cd apps/api
+
+    ```bash
+    npx prisma migrate dev --name init
 
 6. Start the development server:
 
-cd ../..
-npm run dev
+    ```bash
+   cd ../..
+
+    ```bash
+   npm run dev
 Your project should now be up and running.
 
 Usage
