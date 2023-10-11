@@ -33,14 +33,18 @@ npm install
 
 4. Set up the database connection:
 
+create a .env file
+
 Update the database connection URL in the Prisma .env file (e.g., DATABASE_URL=postgresql://username:password@localhost/defaultdb).
 
 5. Apply database migrations:
 
-npm run prisma:apply
+cd apps/api 
+npx prisma migrate dev --name init
 
 6. Start the development server:
 
+cd ../..
 npm run dev
 Your project should now be up and running.
 
