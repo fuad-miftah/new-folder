@@ -45,6 +45,7 @@ This is a user management project built with a monorepo structure, powered by Tu
 
     ```bash
     cd apps/api
+    ```
 
     ```bash
     npx prisma migrate dev --name init
@@ -53,6 +54,7 @@ This is a user management project built with a monorepo structure, powered by Tu
 
     ```bash
    cd ../..
+    ```
 
     ```bash
    npm run dev
